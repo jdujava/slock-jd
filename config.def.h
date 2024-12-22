@@ -1,6 +1,6 @@
 /* user and group to drop privileges to */
 static const char *user  = "nobody";
-static const char *group = "nogroup";
+static const char *group = "nobody";
 
 static const char *colorname[NUMCOLS] = {
 	[INIT] =   "black",     /* after initialization */
@@ -19,9 +19,12 @@ static const Passthrough passthroughs[] = {
 	{ 0,          XF86XK_AudioLowerVolume },
 	{ 0,          XF86XK_AudioMute },
 	{ 0,          XF86XK_AudioPause },
+	{ 0,          XF86XK_AudioPlay },
 	{ 0,          XF86XK_AudioStop },
 	{ 0,          XF86XK_AudioNext },
 	{ 0,          XF86XK_AudioPrev },
+	{ 0,          XF86XK_AudioForward },
+	{ 0,          XF86XK_AudioRewind },
 	{ 0,          XF86XK_MonBrightnessUp },
 	{ 0,          XF86XK_MonBrightnessDown },
 };
